@@ -1,0 +1,331 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+<link href="css/Untitled1.css?v=2" rel="stylesheet">
+<link href="css/index.css?v=2" rel="stylesheet">
+<script src="jquery-3.6.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wb.carousel.effects.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb18.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'clip',
+      direction: 'horizontal',
+      scalemode: 3,
+      pagination: true,
+      pause: null,
+      start: 0
+   };
+   $("#wb_Carousel1").attr('dir', 'ltr');
+   $("#Carousel1").carouseleffects(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carouseleffects('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carouseleffects('next');
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function onScrollSection4_card_item1()
+   {
+      var $obj = $("#Section4-card-item1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('Section4-card-item1', 'transform-bounce-in-right', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('Section4-card-item1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#Section4-card-item1').inViewPort(true))
+   {
+      $('#Section4-card-item1').addClass("in-viewport");
+   }
+   onScrollSection4_card_item1();
+   $(window).scroll(function(event)
+   {
+      onScrollSection4_card_item1();
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<a id="Button1" href="tel:01024888950">اتصل بنا لحجز ميعاد</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1">
+<img src="images/logo-light.png" id="Image1" alt="" width="192" height="49">
+</div>
+</div>
+<div class="col-2">
+<nav id="wb_ResponsiveMenu1">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-book fa-2x">&nbsp;</i>Blog<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-book fa-2x">&nbsp;</i><br>Blog<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-1" class="toggle"><i class="fa fa-eye fa-2x">&nbsp;</i>Design<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-eye fa-2x">&nbsp;</i>Design<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-2" class="toggle"><i class="fa fa-html5 fa-2x">&nbsp;</i>HTML<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-html5 fa-2x">&nbsp;</i>HTML<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-2">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-3" class="toggle"><i class="fa fa-css3 fa-2x">&nbsp;</i>CSS<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-css3 fa-2x">&nbsp;</i>CSS<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-3">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-4" class="toggle"><i class="fa fa-code fa-2x">&nbsp;</i>JavaScript<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-code fa-2x">&nbsp;</i>JavaScript<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-4">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-5" class="toggle"><i class="fa fa-gear fa-2x">&nbsp;</i>Work<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-gear fa-2x">&nbsp;</i><br>Work<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-5">
+<ul role="menu">
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-6" class="toggle"><i class="fa fa-desktop fa-2x">&nbsp;</i>Web&nbsp;Design<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-desktop fa-2x">&nbsp;</i>Web&nbsp;Design<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-6">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-7" class="toggle"><i class="fa fa-picture-o fa-2x">&nbsp;</i>Typography<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-picture-o fa-2x">&nbsp;</i>Typography<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-7">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-8" class="toggle"><i class="fa fa-envelope fa-2x">&nbsp;</i>Applications<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-envelope fa-2x">&nbsp;</i>Applications<b class="arrow-left"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-8">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;1</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;2</a></li>
+<li role="menuitem"><a href="" class="nav-link">Sub&nbsp;Menu&nbsp;3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-user fa-2x">&nbsp;</i><br>About</a></li>
+</ul>
+
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Carousel1">
+<div id="Carousel1">
+<div class="frame frame-1">
+<div class="carousel-item-inner">
+</div>
+</div>
+<div class="frame frame-2" style="display:none">
+<div class="carousel-item-inner">
+</div>
+</div>
+</div>
+<div id="Carousel1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="Carousel1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Section1" class="card">
+   <div id="Section1-card-body">
+      <div id="Section1-card-item0"><div id="Section1-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section1-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section1-card-item1"><div id="Section1-card-item1-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section1-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section1-card-item2"><div id="Section1-card-item2-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section1-card-item2-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M466 467 L466 0 L532 0 L532 467 L1000 467 L1000 533 L534 533 L534 1000 L466 1000 L466 533 L0 533 L0 467Z " />
+</clipPath>
+</svg>
+      <div id="Section1-card-item3">يبقى لازم يكون ليك موقع إلكتروني يبقى لازم يكون ليك موقع إلكتروني<br></div>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Section2" class="card">
+   <div id="Section2-card-body">
+      <div id="Section2-card-item0"><div id="Section2-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section2-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section2-card-item1"><div id="Section2-card-item1-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section2-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section2-card-item2"><div id="Section2-card-item2-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section2-card-item2-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M466 467 L466 0 L532 0 L532 467 L1000 467 L1000 533 L534 533 L534 1000 L466 1000 L466 533 L0 533 L0 467Z " />
+</clipPath>
+</svg>
+      <div id="Section2-card-item3">يبقى لازم يكون ليك موقع إلكتروني يبقى لازم يكون ليك موقع إلكتروني<br></div>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Section3" class="card">
+   <div id="Section3-card-body">
+      <div id="Section3-card-item0"><div id="Section3-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section3-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section3-card-item1"><div id="Section3-card-item1-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section3-card-item1-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M0 0 L1000 0 L1000 1000 L0 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section3-card-item2"><div id="Section3-card-item2-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section3-card-item2-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M466 467 L466 0 L532 0 L532 467 L1000 467 L1000 533 L534 533 L534 1000 L466 1000 L466 533 L0 533 L0 467Z " />
+</clipPath>
+</svg>
+      <div id="Section3-card-item3" data-bottom="transform:;">يبقى لازم يكون ليك موقع إلكتروني يبقى لازم يكون ليك موقع إلكتروني<br></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Divider4">
+<div id="Divider4">
+<hr id="DividerLine5">
+<div id="wb_Icon2">
+<div id="Icon2"><i class="Icon2"></i></div>
+</div>
+<hr id="DividerLine7">
+</div>
+</div>
+<div id="wb_Section4" class="card">
+   <div id="Section4-card-body">
+      <div id="Section4-card-item0"><div id="Section4-card-item0-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section4-card-item0-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M100 900 L900 900 L900 100 L100 100Z  M0 1000 L0 0 L1000 0 L1000 1000Z " />
+</clipPath>
+</svg>
+      <div id="Section4-card-item1"><img src="images/Navy and Yellow Modern Moving Service Banner Landscape (2).jpg" width="6912" height="3456" alt="" title="" ></div>
+      <div id="Section4-card-item2"><div id="Section4-card-item2-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section4-card-item2-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M200 0 L800 0 L900 0 C960 0, 1000 40, 1000 100 C1000 100, 1000 100, 1000 100 L1000 200 L1000 800 L1000 900 C1000 960, 960 1000, 900 1000 L800 1000 L200 1000 L100 1000 C40 1000, 0 960, 0 900 L0 800 L0 200 L0 100 C0 40, 40 0, 100 0" />
+</clipPath>
+</svg>
+      <div id="Section4-card-item3">يبقى لازم تعرف أنه من غير موقع إلكتروني خاص بيك، حضرتك بتضيع فرص كتير! علشان متخسرش أي فرصة تانية، بنقدملك خدماتنا في تصميم المواقع الإلكترونية الاحترافية.<br>نقدر نساعدك توصل لعملائك في كل مكان وفي أي وقت، وكمان نقدر نساعدك تطور نشاطك وتتحكم فيه بشكل أكبر. موقعك الإلكتروني حيكون واجهتك للعالم الرقمي.<br><br></div>
+      <div id="Section4-card-item4"><div id="Section4-card-item4-shape"></div></div>
+<svg style="position:absolute;left:0;top:0;width:0;height:0" aria-hidden="true">
+<clipPath id="Section4-card-item4-clippath" clipPathUnits="objectBoundingBox" transform="scale(0.001, 0.001)">
+<path d="M733 180 C768 237, 786 297, 786 362 C786 429, 768 489, 733 546 C699 601, 650 645, 590 678 C529 710, 464 726, 393 726 C361 726, 328 723, 294 716 C249 756, 197 786, 139 806 C126 811, 110 814, 92 818 L90 818 C86 818, 82 814, 78 811 C75 807, 72 802, 72 797 C71 795, 71 793, 71 792 C71 790, 71 788, 72 788 C72 786, 72 784, 72 783 C74 781, 74 781, 74 779 C75 779, 75 777, 76 776 C76 774, 78 772, 78 772 C79 772, 79 770, 81 769 C82 767, 82 767, 83 765 C85 763, 89 756, 96 747 C103 739, 107 731, 110 726 C114 723, 118 716, 122 707 C128 698, 133 689, 138 678 C140 670, 144 659, 149 648 C103 613, 65 572, 39 521 C13 472, 0 419, 0 362 C0 297, 17 237, 53 180 C88 125, 135 81, 196 48 C256 16, 322 0, 393 0 C464 0, 529 16, 590 48 C650 81, 699 125, 733 180 Z M1000 544 C1000 601, 986 654, 960 703 C933 753, 897 795, 851 829 C856 841, 858 852, 862 860 C867 869, 871 880, 876 889 C882 896, 886 903, 889 908 C892 913, 897 920, 904 929 C911 938, 915 943, 917 947 C917 947, 918 949, 919 951 C919 952, 921 954, 921 954 C922 954, 922 956, 924 958 C925 959, 925 961, 925 961 C926 963, 926 963, 926 965 C928 966, 928 968, 928 970 C928 970, 928 972, 928 973 C928 975, 928 977, 928 979 C926 986, 925 989, 921 995 C917 998, 912 1000, 908 998 C890 996, 874 991, 860 988 C803 968, 751 938, 706 898 C672 905, 639 908, 607 908 C506 908, 418 876, 343 814 C365 816, 382 818, 393 818 C453 818, 510 807, 565 784 C621 763, 669 733, 712 694 C758 650, 794 601, 819 542 C844 486, 857 426, 857 362 C857 327, 853 290, 844 254 C892 288, 931 330, 958 382 C986 433, 1000 486, 1000 544" />
+</clipPath>
+</svg>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
